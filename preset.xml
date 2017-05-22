@@ -3,7 +3,7 @@
 derived from default JOSM preset
 -->
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0">
-        <item name="Parking" icon="presets/vehicle/parking/bicycle.svg" type="node,way,closedway,multipolygon" preset_name_label="true">
+        <item name="Bicycle parking" icon="presets/vehicle/parking/bicycle.svg" type="node,way,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=bicycle_parking"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=bicycle_parking"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=bicycle_parking"
@@ -18,12 +18,26 @@ derived from default JOSM preset
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:amenity=bicycle_parking" />
             <space />
             <key key="amenity" value="bicycle_parking" />
-            <combo key="bicycle_parking" text="Type" values="anchors,building,ground_slots,informal,lockers,rack,shed,stands,wall_loops" />
-            <text key="name" text="Name" />
+            <combo key="bicycle_parking" text="Type" values="stands,wall_loops,anchors,ground_slots,shed" />
             <text key="capacity" text="Capacity" />
-            <reference ref="parking_access_fee_operator_surface_smoothness" />
+            <combo key="operator" text="Operator" values="ZIKiT" />
             <check key="covered" text="Covered" />
-            <reference ref="supervised_lit_oh" />
+            <check key="supervised" text="Supervised" />
+            <check key="lit" text="Lit" />
+            <combo key="access" text="Access" values="yes,private,customers,permissive,no" />
+            <combo key="surface" text="Surface" values="asphalt,concrete,concrete:plates,concrete:lanes,paving_stones,sett,cobblestone,grass_paver,compacted,fine_gravel,gravel,pebblestone,ground,mud,sand,grass,wood,metal,paved,unpaved" />
+            <combo key="smoothness" text="Smoothness" values_searchable="true" values_sort="false">
+                <list_entry value="excellent" short_description="Thin Rollers: rollerblade, skateboard" />
+                <list_entry value="good" short_description="Thin Wheels: racing bike" />
+                <list_entry value="intermediate" short_description="Wheels: city bike, wheelchair, scooter" />
+                <list_entry value="bad" short_description="Robust Wheels: trekking bike, car, rickshaw" />
+                <list_entry value="very_bad" short_description="High Clearance: light duty off-road vehicle" />
+                <list_entry value="horrible" short_description="Off-Road: heavy duty off-road vehicle" />
+                <list_entry value="very_horrible" short_description="Specialized off-road: tractor, ATV" />
+                <list_entry value="impassable" short_description="No wheeled vehicle" />
+            </combo>
+            <check key="fee" text="Fee" />
+            <combo key="material" text="Material" values="metal" />
         </item> <!-- Parking -->
         <item name="Bike Dealer" icon="presets/shop/bicycle.svg" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=bicycle"
