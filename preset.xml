@@ -23,7 +23,6 @@ derived from default JOSM preset
             <combo key="operator" text="Operator" values="ZIKiT,SM Widok" />
             <check key="covered" text="Covered" />
             <check key="supervised" text="Supervised" />
-            <check key="lit" text="Lit" />
             <combo key="access" text="Access" values="yes,private,customers,permissive,no" />
             <combo key="surface" text="Surface" values="asphalt,concrete,concrete:plates,concrete:lanes,paving_stones,sett,cobblestone,grass_paver,compacted,fine_gravel,gravel,pebblestone,ground,mud,sand,grass,wood,metal,paved,unpaved" />
             <combo key="smoothness" text="Smoothness" values_searchable="true" values_sort="false">
@@ -36,7 +35,6 @@ derived from default JOSM preset
                 <list_entry value="very_horrible" short_description="Specialized off-road: tractor, ATV" />
                 <list_entry value="impassable" short_description="No wheeled vehicle" />
             </combo>
-            <check key="fee" text="Fee" />
             <combo key="material" text="Material" values="metal" />
         </item> <!-- Parking -->
         <item name="Bike Dealer" icon="presets/shop/bicycle.svg" type="node,closedway,multipolygon" preset_name_label="true">
