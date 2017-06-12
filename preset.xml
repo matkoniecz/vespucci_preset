@@ -20,7 +20,7 @@ derived from default JOSM preset
             <key key="amenity" value="bicycle_parking" />
             <combo key="bicycle_parking" text="Type" values="stands,wall_loops,anchors,ground_slots,shed" />
             <text key="capacity" text="Capacity" />
-            <combo key="operator" text="Operator" values="ZIKiT," />
+            <combo key="operator" text="Operator" values="ZIKiT,SM Widok" />
             <check key="covered" text="Covered" />
             <check key="supervised" text="Supervised" />
             <check key="lit" text="Lit" />
